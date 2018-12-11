@@ -14,10 +14,32 @@
       <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
+      </ul>
+      <li class="dropdown" dropdown> <!-- {1} -->
+        <a dropdownToggle role="button"> <!-- {2} -->
+          Dropdown <span class="caret"></span></a>
+        <ul *dropdownMenu class="dropdown-menu"> <!-- {3} -->
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+        </ul>
+    </li>
+      <!--  Begin Dropdown -->
+      <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">User Control <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Settings</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </li>
     </ul>
-    <form class="form-inline mt-2 mt-md-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <!-- / End Dropdown -->
   </div>
 </nav>
